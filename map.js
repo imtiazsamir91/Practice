@@ -9,3 +9,8 @@ const doubleNumbers=number.map(num=>num*3);
 const celsious=[22,33,40,42,50];
 const fahrenheit=celsious.map(c=>c*9/5+32);
 //console.log(fahrenheit);
+
+//3
+const users=[{id:1,name:'John'},{id:2,name:'Jane'},{id:3,name:'Jack'}];
+const usernames=users.map(user=>user.name);
+//console.log(usernames);
