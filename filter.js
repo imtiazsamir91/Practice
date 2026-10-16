@@ -16,4 +16,9 @@ const Users=[
   { id: 4, name: "David", isActive: false }
 ];
 const activeUsers=Users.filter(user=>user.isActive);
-console.log(activeUsers);
+//console.log(activeUsers);
+
+//৪. ছোট শব্দগুলো বাদ দেওয়া: যে শব্দগুলোর দৈর্ঘ্য ৫ এর বেশি, শুধু সেগুলো রাখো।
+const words = ["apple", "banana", "kiwi", "grape", "orange", "pear"];
+const longWords=words.filter(w=>w.length>5);
+//console.log(longWords);
