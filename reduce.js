@@ -24,4 +24,9 @@ const frequency=fruits.reduce((acc,curr)=>{
     acc[curr]=(acc[curr] || 0)+1;
     return acc;
 },{});
-console.log(frequency);
+//console.log(frequency);
+
+//৫. নেস্টেড অ্যারে ফ্ল্যাট করা (Flatten): দ্বিমাত্রিক অ্যার্েকে এক মাত্রিক অ্যারেতে রূপান্তর করো।
+const nested = [[1, 2], [3, 4], [5, 6]];
+const flat = nested.reduce((acc, curr) => acc.concat(curr), []); 
+console.log(flat);
