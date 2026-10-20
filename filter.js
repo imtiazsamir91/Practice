@@ -22,3 +22,8 @@ const activeUsers=Users.filter(user=>user.isActive);
 const words = ["apple", "banana", "kiwi", "grape", "orange", "pear"];
 const longWords=words.filter(w=>w.length>5);
 //console.log(longWords);
+
+//৫. ফাল্সি ভ্যালু (Falsy Values) দূর করা: অ্যারে থেকে null, undefined, 0, বা খালি স্ট্রিং ফিল্টার করে ফেলে দাও।
+const mixedValues = [0, 1, false, 2, '', 3, null, undefined, 'hello', 'world'];
+const truthyValues=mixedValues.filter(Boolean);
+console.log(truthyValues);
