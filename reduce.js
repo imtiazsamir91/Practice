@@ -1,0 +1,37 @@
+//১. সব সংখ্যার যোগফল: অ্যারের সব সংখ্যার যোগফল বের করো।
+const numbers = [1, 2, 3, 4, 5];
+const sum= numbers.reduce((acc,curr)=>acc+curr,0);
+//console.log(sum);
+
+
+//২. সবচেয়ে বড় সংখ্যা (Max): reduce ব্যবহার করে অ্যারের সবচেয়ে বড় সংখ্যাটি বের করো।
+const numbers2 = [10, 20, 30, 40, 50];
+const maxNumber=numbers2.reduce((max,curr)=>max>curr?max:curr);
+//console.log(maxNumber);
+
+//৩. শপিং কার্টের মোট দাম: কার্টের সব আইটেমের দাম যোগ করে মোট খরচ বের করো।
+const cartItems = [
+  { id: 1, name: "Shirt", price: 20 },
+  { id: 2, name: "Pants", price: 30 },
+  { id: 3, name: "Shoes", price: 50 }
+];
+const totalCost = cartItems.reduce((sum, item) => sum + item.price, 0);
+//console.log(totalCost);
+
+//৪. উপাদানের ফ্রিকোয়েন্সি গোনা: অ্যারেতে কোন উপাদান কয়বার আছে তার অবজেক্ট তৈরি করো।
+const fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+const frequency=fruits.reduce((acc,curr)=>{
+    acc[curr]=(acc[curr] || 0)+1;
+    return acc;
+},{});
+//console.log(frequency);
+
+//৫. নেস্টেড অ্যারে ফ্ল্যাট করা (Flatten): দ্বিমাত্রিক অ্যার্েকে এক মাত্রিক অ্যারেতে রূপান্তর করো।
+const nested = [[1, 2], [3, 4], [5, 6]];
+const flat = nested.reduce((acc, curr) => acc.concat(curr), []); 
+//console.log(flat);
+
+//৬. স্ট্রিংগুলিকে একত্রিত করা: অ্যারের সব স্ট্রিংকে একটি স্ট্রিংয়ে একত্রিত করো।
+const strings = ["Hello", " ", "World", "!"];
+const combinedString = strings.reduce((acc, curr) => acc + curr, '');
+console.log(combinedString);
