@@ -5,3 +5,5 @@ const toString = (value) => {
 };
 console.log(toString(value));
 console.log(typeof toString(value)); // Output: "string"
+
+//123abc
